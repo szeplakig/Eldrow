@@ -34,11 +34,11 @@ function filterWords(starts, ends, includes, excludes, pos_is, pos_isnt) {
             nullOrMatch(word[2], pos_is[2]) &&
             nullOrMatch(word[3], pos_is[3]) &&
             nullOrMatch(word[4], pos_is[4]) &&
-            word[0] != pos_isnt[0] &&
-            word[1] != pos_isnt[1] &&
-            word[2] != pos_isnt[2] &&
-            word[3] != pos_isnt[3] &&
-            word[4] != pos_isnt[4]
+            !pos_isnt[0].includes(word[0]) &&
+            !pos_isnt[1].includes(word[1]) &&
+            !pos_isnt[2].includes(word[2]) &&
+            !pos_isnt[3].includes(word[3]) &&
+            !pos_isnt[4].includes(word[4])
         ) {
             filteredWords.push(word);
         }
