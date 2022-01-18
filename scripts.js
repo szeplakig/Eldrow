@@ -47,17 +47,17 @@ function filterWords(starts, ends, includes, excludes, pos_is, pos_isnt) {
 }
 
 function update() {
-    starts = document.querySelector("#starts").value
-    ends = document.querySelector("#ends").value
-    includes = document.querySelector("#includes").value
-    excludes = document.querySelector("#excludes").value
+    starts = document.querySelector("#starts").value.toLowerCase()
+    ends = document.querySelector("#ends").value.toLowerCase()
+    includes = document.querySelector("#includes").value.toLowerCase()
+    excludes = document.querySelector("#excludes").value.toLowerCase()
     let pos_is = []
     for (let i = 0; i < 5; i++) {
-        pos_is.push(document.querySelector("#pos_is" + i).value.substr(0, 1))
+        pos_is.push(document.querySelector("#pos_is" + i).value.substr(0, 1)).toLowerCase()
     }
     let pos_isnt = []
     for (let i = 0; i < 5; i++) {
-        pos_isnt.push(document.querySelector("#pos_isnt" + i).value.substr(0, 1))
+        pos_isnt.push(document.querySelector("#pos_isnt" + i).value.substr(0, 1)).toLowerCase()
     }
     document.querySelector("#output").innerHTML = filterWords(starts, ends, includes, excludes, pos_is, pos_isnt).map(s => "<li>" + s + "</li>").join("")
 }
