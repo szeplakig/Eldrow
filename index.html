@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Eldrow</title>
-    </head>
-    <body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eldrow</title>
+  </head>
+  <body>
+    <div>
+      <div>
         <div>
-            <div>
-                <label for="starts">Starts (str): </label>
-                <input type="text" name="starts" id="starts" oninput="update()">
-                <label for="ends">Ends (str): </label>
-                <input type="text" name="ends" id="ends" oninput="update()">
-                <label for="includes">Includes (chrs): </label>
-                <input type="text" name="includes" id="includes"
-                    oninput="update()">
-                <label for="Excludes">Excludes (chrs): </label>
-                <input type="text" name="excludes" id="excludes"
-                    oninput="update()">
-                <br>
-                <label for="pos_is0">P0 (chr): </label>
-                <input type="text" name="pos_is0" id="pos_is0"
-                    oninput="update()">
-                <label for="pos_is1">P1 (chr): </label>
-                <input type="text" name="pos_is1" id="pos_is1"
-                    oninput="update()">
-                <label for="pos_is2">P2 (chr): </label>
-                <input type="text" name="pos_is2" id="pos_is2"
-                    oninput="update()">
-                <label for="pos_is3">P3 (chr): </label>
-                <input type="text" name="pos_is3" id="pos_is3"
-                    oninput="update()">
-                <label for="pos_is4">P4 (chr): </label>
-                <input type="text" name="pos_is4" id="pos_is4"
-                    oninput="update()">
-                <br>
-                <label for="pos_isnt0">!P0 (chrs): </label>
-                <input type="text" name="pos_isnt0" id="pos_isnt0"
-                    oninput="update()">
-                <label for="pos_isnt1">!P1 (chrs): </label>
-                <input type="text" name="pos_isnt1" id="pos_isnt1"
-                    oninput="update()">
-                <label for="pos_isnt2">!P2 (chrs): </label>
-                <input type="text" name="pos_is2" id="pos_isnt2"
-                    oninput="update()">
-                <label for="pos_isnt3">!P3 (chrs): </label>
-                <input type="text" name="pos_is3" id="pos_isnt3"
-                    oninput="update()">
-                <label for="pos_isnt4">!P4 (chrs): </label>
-                <input type="text" name="pos_is4" id="pos_isnt4"
-                    oninput="update()">
-
-            </div>
-            <div><ol id="output"></ol></div>
+          <label for="starts">Starts (str): </label>
+          <input type="text" name="starts" id="starts" oninput="update()" />
         </div>
+        <div>
+            <label for="ends">Ends (str): </label>
+            <input type="text" name="ends" id="ends" oninput="update()" /></div>
+        <div>
+            <label for="includes">Includes (chrs): </label>
+            <input type="text" name="includes" id="includes" oninput="update()" /></div>
+        <div>
+            <label for="Excludes">Excludes (chrs): </label>
+            <input type="text" name="excludes" id="excludes" oninput="update()" /></div>
+        <br />
+        <div>
+            <label for="pos_is0">P0 (chr): </label>
+            <input type="text" name="pos_is0" id="pos_is0" oninput="update()" /></div>
+        <div>
+            <label for="pos_is1">P1 (chr): </label>
+            <input type="text" name="pos_is1" id="pos_is1" oninput="update()" /></div>
+        <div>
+            <label for="pos_is2">P2 (chr): </label>
+            <input type="text" name="pos_is2" id="pos_is2" oninput="update()" /></div>
+        <div>
+            <label for="pos_is3">P3 (chr): </label>
+            <input type="text" name="pos_is3" id="pos_is3" oninput="update()" /></div>
+        <div>
+            <label for="pos_is4">P4 (chr): </label>
+            <input type="text" name="pos_is4" id="pos_is4" oninput="update()" /></div>
+        <br />
+        <div>
+            <label for="pos_isnt0">!P0 (chrs): </label>
+            <input type="text" name="pos_isnt0" id="pos_isnt0" oninput="update()" /></div>
+        <div>
+            <label for="pos_isnt1">!P1 (chrs): </label>
+            <input type="text" name="pos_isnt1" id="pos_isnt1" oninput="update()" /></div>
+        <div>
+            <label for="pos_isnt2">!P2 (chrs): </label>
+        <input type="text" name="pos_is2" id="pos_isnt2" oninput="update()" />
+        </div>
+        <div>
+            <label for="pos_isnt3">!P3 (chrs): </label>
+            <input type="text" name="pos_is3" id="pos_isnt3" oninput="update()" /></div>
+        <div>
+            <label for="pos_isnt4">!P4 (chrs): </label>
+            <input type="text" name="pos_is4" id="pos_isnt4" oninput="update()" />
+        </div>
+      </div>
+      <div><ol id="output"></ol></div>
+    </div>
 
-        <script src="words.js"></script>
-        <script src="scripts.js"></script>
-    </body>
+    <script src="words.js"></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>

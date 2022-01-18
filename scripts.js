@@ -59,7 +59,7 @@ function update() {
     for (let i = 0; i < 5; i++) {
         pos_isnt.push(document.querySelector("#pos_isnt" + i).value.substr(0, 1).toLowerCase())
     }
-    document.querySelector("#output").innerHTML = filterWords(starts, ends, includes, excludes, pos_is, pos_isnt).map(s => "<li>" + s + "</li>").join("")
+    document.querySelector("#output").innerHTML = filterWords(starts, ends, includes, excludes, pos_is, pos_isnt).slice(0, 100).map(s => "<li>" + s + "</li>").join("")
 }
 
 update()
