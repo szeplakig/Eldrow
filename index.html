@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eldrow</title>
+    </head>
+    <body>
+        <div>
+            <div>
+                <label for="starts">Starts (str): </label>
+                <input type="text" name="starts" id="starts" oninput="update()">
+                <label for="ends">Ends (str): </label>
+                <input type="text" name="ends" id="ends" oninput="update()">
+                <label for="includes">Includes (chars): </label>
+                <input type="text" name="includes" id="includes"
+                    oninput="update()">
+                <label for="Excludes">Excludes (chars): </label>
+                <input type="text" name="excludes" id="excludes"
+                    oninput="update()">
+                <br>
+                <label for="pos0">Pos 0: </label>
+                <input type="text" name="pos0" id="pos0"
+                    oninput="update()">
+                <label for="pos1">Pos 1: </label>
+                <input type="text" name="pos1" id="pos1"
+                    oninput="update()">
+                <label for="pos2">Pos 2: </label>
+                <input type="text" name="pos2" id="pos2"
+                    oninput="update()">
+                <label for="pos3">Pos 3: </label>
+                <input type="text" name="pos3" id="pos3"
+                    oninput="update()">
+                <label for="pos4">Pos 4: </label>
+                <input type="text" name="pos4" id="pos4"
+                    oninput="update()">
+            </div>
+            <div><ol id="output"></ol></div>
+        </div>
+
+        <script src="words.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
