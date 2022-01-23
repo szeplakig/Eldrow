@@ -17,11 +17,6 @@ function removeChars(word, toRemove) {
 }
 
 function filterWords(starts, ends, includes, excludes, pos_is, pos_isnt) {
-    excludes = removeChars(excludes, starts)
-    excludes = removeChars(excludes, ends)
-    excludes = removeChars(excludes, includes)
-    excludes = removeChars(excludes, pos_is)
-    includes = removeChars(includes, pos_isnt)
     const filteredWords = []
     for (const word of words) {
         if (
